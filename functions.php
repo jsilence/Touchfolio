@@ -11,8 +11,6 @@ define( 'USE_LESS_CSS', true );
 define( 'DS_THEME_PATH', get_template_directory_uri() );
 define( 'DS_THEME_DIR', TEMPLATEPATH );
 
-
-
 // Add single class to body for gallery pages
 add_filter('body_class','my_class_names');
 function my_class_names($classes) {
@@ -149,7 +147,7 @@ function dsframework_setup() {
 	/**
 	 * Enable support for Post Thumbnails
 	 */
-	add_theme_support( 'post-thumbnails', array('ds-gallery') );
+	add_theme_support( 'post-thumbnails', array('ds-gallery', 'post') );
 	add_image_size( 'gallery-thumb', 304, 5000 ); // for masonry portfolio
 
 	/**
