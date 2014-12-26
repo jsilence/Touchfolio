@@ -30,7 +30,6 @@
 			$tax_query = '';
 		}
 		$loop = new WP_Query( array(
-//			'post_type' => 'ds-gallery',
 			'post_type' => array('ds-gallery', 'post'),
 			'posts_per_page' => -1,
 			'tax_query' => $tax_query

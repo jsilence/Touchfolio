@@ -11,6 +11,8 @@ define( 'USE_LESS_CSS', true );
 define( 'DS_THEME_PATH', get_template_directory_uri() );
 define( 'DS_THEME_DIR', TEMPLATEPATH );
 
+
+
 // Add single class to body for gallery pages
 add_filter('body_class','my_class_names');
 function my_class_names($classes) {
